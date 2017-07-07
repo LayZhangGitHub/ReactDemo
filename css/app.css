@@ -1,0 +1,88 @@
+
+@value myValue: #0c77f8;
+
+.title {
+  color: myValue;
+}
+
+.mainBackground {
+  
+  width: 100%;
+    /* 限制 最大 最小值 */
+    max-width: 640px;
+    min-width:320px;
+    background-color: orange; 
+    /* 居中 */
+    margin: 0 auto;
+    /* 设置默认高度 为了 能够被看到 */
+     /*height: 1000px; */
+    /*width: 375px;
+    height: 667px;*/
+    background: url("../img/beijing.png") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 290px;
+    padding-bottom: 56%;
+    /*padding: 0;*/
+}
+
+.firstface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  
+  background: linear-gradient(top, #222, #333);
+}
+
+
+
+[data-rule$="face"] {
+  margin: 16px;
+  padding: 4px;
+  
+  background-color: #e7e7e7;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+  
+  box-shadow:
+    inset 0 5px white, 
+    inset 0 -5px #bbb,
+    inset 5px 0 #d7d7d7, 
+    inset -5px 0 #d7d7d7;
+  
+  border-radius: 10%;
+}
+
+
+
+.pip {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+
+  background-color: #333;
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+
+
+
