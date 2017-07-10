@@ -1,59 +1,10 @@
-
-@value myValue: #0c77f8;
-
-.title {
-  color: myValue;
-}
-
-.mainBackground {
-  
-  width: 100%;
-    /* 限制 最大 最小值 */
-    max-width: 640px;
-    min-width:320px;
-    background-color: orange; 
-    /* 居中 */
-    margin: 0 auto;
-    /* 设置默认高度 为了 能够被看到 */
-     /*height: 1000px; */
-    /*width: 375px;
-    height: 667px;*/
-    background: url("../img/beijing.png") no-repeat;
-    background-size: 100% 100%;
-    padding-top: 290px;
-    padding-bottom: 56%;
-    /*padding: 0;*/
-}
-
-.firstface {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 * {
-  box-sizing: border-box;
-}
 
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: center;
-  flex-wrap: wrap;
-  align-content: center;
-  font-family: 'Open Sans', sans-serif;
-  
-  background: linear-gradient(top, #222, #333);
 }
 
 
-
-[data-rule$="face"] {
+/*[data-rule$="face"]*/
+ .face {
   margin: 16px;
   padding: 4px;
   
@@ -71,10 +22,73 @@ body {
   border-radius: 10%;
 }
 
+.firstface {
+  composes: face;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.secondface {
+  composes: face;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondface .pip:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.thirdface {
+  composes: face;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thirdface .pip:nth-of-type(3) {
+  justify-content: flex-end;
+}
+
+.thirdface .pip:nth-of-type(2) {
+  justify-content: center;
+}
+
+.fourthface {
+  composes: face;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourthface .column, .sixthface .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifthface {
+  composes: face;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fifthface .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifthface .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+.sixthface {
+  composes: face;
+  display: flex;
+  justify-content: space-between;
+}
 
 .pip {
-  display: block;
+  display: flex;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -83,6 +97,4 @@ body {
   background-color: #333;
   box-shadow: inset 0 3px #111, inset 0 -3px #555;
 }
-
-
 

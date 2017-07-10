@@ -34,6 +34,13 @@ module.exports = {
             {
                 test: /\.(png|jpg|svg)/,
                 loaders: ['url', 'image-webpack-loader'],
+            },
+            {
+                test: /\.scss$/,
+                loader:'style!css!sass'
+                // loader: ExtractTextPlugin.extract("style", 'css!sass') 
+                //这里用了样式分离出来的插件，如果不想分离出来，可以直接这样写 
+                //loader:'style!css!sass'
             }
         ]
     },

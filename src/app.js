@@ -61,8 +61,54 @@ var App = React.createClass({
         // );
 
         return (
-            <div className={Style.firstface} data-rule="face">
-              <span className={Style.pip}></span>
+            <div>
+                <div className={Style.firstface}>
+                    <span className={Style.pip}></span>
+                </div>
+                <div className={Style.secondface}>
+                    <span className={Style.pip}></span>
+                    <span className={Style.pip}></span>
+                </div>
+                <div className={Style.thirdface}>
+                    <span className={Style.pip}></span>
+                    <span className={Style.pip}></span>
+                    <span className={Style.pip}></span>
+                </div>
+                <div className={Style.fourthface}>
+                    <div className={Style.column}>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                    </div>
+                    <div className={Style.column}>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                    </div>
+                </div>
+                <div className={Style.fifthface}>
+                    <div className={Style.column}>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                    </div>
+                    <div className={Style.column}>
+                        <span className={Style.pip}></span>
+                    </div>
+                    <div className={Style.column}>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                    </div>
+                </div>
+                <div className={Style.sixthface}>
+                    <div className={Style.column}>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                    </div>
+                    <div className={Style.column}>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                        <span className={Style.pip}></span>
+                    </div>
+                </div>
             </div>
         );
     }
